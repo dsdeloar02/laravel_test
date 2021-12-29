@@ -10,3 +10,6 @@ class UserController extends Controller
         return 'this is from controller';
     }
 }
+
+
+
