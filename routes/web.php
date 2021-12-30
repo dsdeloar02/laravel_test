@@ -2,6 +2,7 @@
 
 use App\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MyController;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\ResultController;
 use App\Http\Controllers\RetriveController;
@@ -29,6 +30,10 @@ Route::get('/retrive', [RetriveController::class, 'selectAllRows']);
 Route::get('/retriveone', [RetriveController::class, 'selectOneRows']);
 
 Route::get('/findrow', [RetriveController::class, 'selectfindRows']);
+
+$router->get('/first',[MyController::class, 'First']);
+$router->get('/second',[MyController::class, 'Second']);
+$router->get('/download',[MyController::class, 'Download']);
 
 
 
